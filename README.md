@@ -2,8 +2,7 @@
 
 > The data and information in this repository are always under development.
 
-The Fisheries EDM program's core goal is to
-  *
+The primary mission of the Enterprise Data Management (EDM) Program is to rigorously apply modern data management best practices to improve business and scientific operations throughout NOAA Fisheries.
 
 ## NOAA README
 
