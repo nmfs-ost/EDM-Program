@@ -1,0 +1,98 @@
+---
+title: "Data Policies & Guidance"
+---
+
+Federal data policies and practical guidance to help NOAA staff understand their obligations and how to meet them.
+
+::: {.policy-section}
+## Federal Data Policies
+
+These laws and directives establish the legal framework for how federal agencies must collect, manage, share, and preserve data.
+
+::: {.resource}
+#### Evidence Act (2018)
+**Foundations for Evidence-Based Policymaking Act** — requires agencies to designate Chief Data Officers, develop learning agendas, and make data available for evidence-building.
+
+**What it means for you:** Data collected with federal resources must be managed well enough to be reused for future policy and research.
+
+[View Policy →](https://www.congress.gov/bill/115th-congress/house-bill/4174)
+:::
+
+::: {.resource}
+#### Information Quality Act (IQA)
+Requires federal agencies to ensure the quality, objectivity, utility, and integrity of information they disseminate.
+
+**What it means for you:** Data products must meet documented quality standards before public release.
+
+[View Policy →](https://www.commerce.gov/about/policies/information-quality)
+:::
+
+::: {.resource}
+#### OPEN Government Data Act
+Part of the Evidence Act — requires federal data to be published as machine-readable, open data by default.
+
+**What it means for you:** FAIR data principles are a legal requirement, not just a best practice.
+
+[View Policy →](https://data.gov/open-gov/)
+:::
+
+::: {.resource}
+#### OSTP Open Science Memo (2022)
+"Ensuring Free, Immediate, and Equitable Access to Federally Funded Research" — requires data underlying publications to be publicly accessible at time of publication.
+
+**What it means for you:** Plan for open data sharing from the start of every project.
+
+[View Policy →](https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/08/08-2022-OSTP-Public-Access-Memo.pdf)
+:::
+
+::: {.resource}
+#### OMB M-19-15
+Updated guidance on IQA implementation, including peer review requirements for influential scientific information.
+
+**What it means for you:** Peer review and quality documentation are required for disseminated scientific products.
+
+[View Policy →](https://trumpwhitehouse.archives.gov/wp-content/uploads/2019/04/M-19-15.pdf)
+:::
+
+::: {.resource}
+#### NAO 212-15B
+NOAA Administrative Order establishing requirements for full data lifecycle management across all NOAA data domains.
+
+**What it means for you:** The primary NOAA policy document your data management practices must comply with.
+
+[View Policy →](https://www.noaa.gov/organization/administration/nao-212-15-Management-of-NOAA-Data-and-Information)
+:::
+:::
+
+::: {.policy-section}
+## Data Guidance
+
+Practical guidance documents to help NOAA scientists and data managers implement good data practices. Links will be added as guidance is finalized.
+
+::: {.resource}
+#### NOAA Fisheries Data Preservation Guidance
+[Internal - Published 2025]{.badge-noaa} [All NOAA Fisheries Data Stewards?]{.badge-noaa}
+
+NOAA Fisheries FMCs must quickly assess which data may be at a level of risk. NOAA Fisheries program/laboratory/data leaders must work with their appropriate Assistant Chief Data Officers (ACDOs) to identify these data, ensure that a minimum level of information for these data is recorded, and secure these data in appropriate storage.
+
+[Read Guidance →](https://docs.google.com/document/d/1VHRFetBU2HRY6q1DwLsgO8GfwSV_w-o9sBhFTvk7DuQ/edit?usp=sharing)
+:::
+
+::: {.resource}
+#### Guidance for Adding New Metadata Records to InPort
+[Internal - Published 2026]{.badge-noaa} [All NOAA Fisheries Data Users]{.badge-noaa}
+
+Step-by-step guidance for writing Data Management Plans (DMPs) that satisfy NSF, NIH, and NOAA requirements.
+
+[Read Guidance →](https://docs.google.com/document/d/1XjsBGqk4ZsoYvSFqnm3-0Fa9-9-Keiy2ilUNB1cQNqU/edit?usp=sharing)
+:::
+
+::: {.resource}
+#### Metadata Completeness and Quality Checks
+[Internal - Published 2024]{.badge-noaa} [NOAA Fisheries Data Stewards]{.badge-noaa}
+
+The NOAA Metadata Rubric evaluates the presence or absence of content in a standard NOAA compliant metadata record.
+
+[Read Guidance →](https://docs.google.com/document/d/10HXxYJmIIhFI51MVzNMAxzA2KEgXXhVwB4R8UTbHm8w/edit?usp=sharing)
+:::
+:::

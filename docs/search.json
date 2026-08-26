@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "The EDM Program is an executive-supported team with a deep knowledgebase of data governance and data management. The team excels at working on multiple efforts at once, dedicated to improving data stewardship, data management, and ultimately science for NOAA Fisheries. Furthermore, the EDM Program’s well-established, collaborative relationship across the FMCs, NOAA writ large, FIS, external partners like the FINs (Fishery Information Network), and OCIO uniquely positions the program to drive enterprise-wide data management strategies.\nWant to collaborate or contribute? Get in touch"
+  },
+  {
+    "objectID": "team.html#leadership",
+    "href": "team.html#leadership",
+    "title": "Team",
+    "section": "Leadership",
+    "text": "Leadership\n\nDr. Michael Liddel\nAssistant Chief Data Officer (ACDO)\nStrategic oversight, resource authorization, and final accountability.\nmichael.liddel@noaa.gov\n\n\nDr. Lisa Peterson\nEDM Program Lead\nProgram management, team health, and cross-functional alignment.\nlisa.peterson@noaa.gov"
+  },
+  {
+    "objectID": "team.html#program-members",
+    "href": "team.html#program-members",
+    "title": "Team",
+    "section": "Program Members",
+    "text": "Program Members\n\nDr. Lincoln Rehm\nData Optimization Lead\nTechnical strategy and leadership for data-driven initiatives.\nlincoln.rehm@noaa.gov\n\n\nPriya Jhanghiani\nData Governance Coordinator and MIST Lead\nData Governance (DG) coordination, support, and MIST workflow management.\npriya.jhanghianin@noaa.gov\n\n\nMatthew “Chase” Long\nData Governance Advisor & Coordinator\nDG coordination and tactical support.\nmatthew.long@noaa.gov\n\n\nLeonora Fukuda\nStrategic Initiative Coordinator\nStrategic Initiatives coordination and data management / governance support.\nleonora.fukuda@noaa.gov\n\n\nMelissa Yencho\nPilot Project Support\nSpecialized support for pilot-phase initiatives.\nmelissa.yencho@noaa.gov"
+  },
+  {
+    "objectID": "team.html#support-contributors",
+    "href": "team.html#support-contributors",
+    "title": "Team",
+    "section": "Support & Contributors",
+    "text": "Support & Contributors\nIndividuals and groups outside the core program who regularly contribute to or collaborate on our work.\n\nScott Sauri\nApplication Development Branch - Fisheries Office of Chief Information Officer\nBridging EDM initiatives with OCIO standards/resources.\nscott.sauri@noaa.gov\n\n\nTim Haverland\nGIS App Developer · Fisheries Office of Science and Technology\nGIS data, products, and tool optimization.\ntim.haverland@noaa.gov\n\n\nFisheries Information System (FIS)\nThe Fisheries Information System program is a state-regional-federal partnership supporting sound, science-based fisheries management.\n\n\nFisheries Data Governance Committee (FDGC)\nThe purpose of the FDGC is to enable NOAA Fisheries to maximize the value of its data assets through sound and coordinated data governance and management practices."
+  },
+  {
+    "objectID": "policies.html",
+    "href": "policies.html",
+    "title": "Data Policies & Guidance",
+    "section": "",
+    "text": "Federal data policies and practical guidance to help NOAA staff understand their obligations and how to meet them."
+  },
+  {
+    "objectID": "policies.html#federal-data-policies",
+    "href": "policies.html#federal-data-policies",
+    "title": "Data Policies & Guidance",
+    "section": "Federal Data Policies",
+    "text": "Federal Data Policies\nThese laws and directives establish the legal framework for how federal agencies must collect, manage, share, and preserve data.\n\nEvidence Act (2018)\nFoundations for Evidence-Based Policymaking Act — requires agencies to designate Chief Data Officers, develop learning agendas, and make data available for evidence-building.\nWhat it means for you: Data collected with federal resources must be managed well enough to be reused for future policy and research.\nView Policy →\n\n\nInformation Quality Act (IQA)\nRequires federal agencies to ensure the quality, objectivity, utility, and integrity of information they disseminate.\nWhat it means for you: Data products must meet documented quality standards before public release.\nView Policy →\n\n\nOPEN Government Data Act\nPart of the Evidence Act — requires federal data to be published as machine-readable, open data by default.\nWhat it means for you: FAIR data principles are a legal requirement, not just a best practice.\nView Policy →\n\n\nOSTP Open Science Memo (2022)\n“Ensuring Free, Immediate, and Equitable Access to Federally Funded Research” — requires data underlying publications to be publicly accessible at time of publication.\nWhat it means for you: Plan for open data sharing from the start of every project.\nView Policy →\n\n\nOMB M-19-15\nUpdated guidance on IQA implementation, including peer review requirements for influential scientific information.\nWhat it means for you: Peer review and quality documentation are required for disseminated scientific products.\nView Policy →\n\n\nNAO 212-15B\nNOAA Administrative Order establishing requirements for full data lifecycle management across all NOAA data domains.\nWhat it means for you: The primary NOAA policy document your data management practices must comply with.\nView Policy →"
+  },
+  {
+    "objectID": "policies.html#data-guidance",
+    "href": "policies.html#data-guidance",
+    "title": "Data Policies & Guidance",
+    "section": "Data Guidance",
+    "text": "Data Guidance\nPractical guidance documents to help NOAA scientists and data managers implement good data practices. Links will be added as guidance is finalized.\n\nNOAA Fisheries Data Preservation Guidance\nInternal - Published 2025 All NOAA Fisheries Data Stewards?\nNOAA Fisheries FMCs must quickly assess which data may be at a level of risk. NOAA Fisheries program/laboratory/data leaders must work with their appropriate Assistant Chief Data Officers (ACDOs) to identify these data, ensure that a minimum level of information for these data is recorded, and secure these data in appropriate storage.\nRead Guidance →\n\n\nGuidance for Adding New Metadata Records to InPort\nInternal - Published 2026 All NOAA Fisheries Data Users\nStep-by-step guidance for writing Data Management Plans (DMPs) that satisfy NSF, NIH, and NOAA requirements.\nRead Guidance →\n\n\nMetadata Completeness and Quality Checks\nInternal - Published 2024 NOAA Fisheries Data Stewards\nThe NOAA Metadata Rubric evaluates the presence or absence of content in a standard NOAA compliant metadata record.\nRead Guidance →"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EDM Program",
+    "section": "",
+    "text": "The primary mission of the Enterprise Data Management (EDM) Program is to rigorously apply modern data management best practices to improve business and scientific operations throughout NOAA Fisheries."
+  },
+  {
+    "objectID": "index.html#focus-areas",
+    "href": "index.html#focus-areas",
+    "title": "EDM Program",
+    "section": "Focus Areas",
+    "text": "Focus Areas\n\n\n\n\n\n\n\n\n#\nTheme\nDescription\n\n\n\n\n01\nACDO Support\nSupporting the work of the Fisheries Assistant Chief Data Officer (ACDO)\n\n\n02\nData Governance\nFocusing on Fisheries enterprise data governance, data optimization, metadata, and data centralization and integration\n\n\n03\nFDGC Support\nSupporting the Fisheries Data Governance Committee (FDGC)"
+  },
+  {
+    "objectID": "index.html#recent-news",
+    "href": "index.html#recent-news",
+    "title": "EDM Program",
+    "section": "Recent News",
+    "text": "Recent News\nSeptember 2026 — NEWS."
+  },
+  {
+    "objectID": "index.html#affiliation",
+    "href": "index.html#affiliation",
+    "title": "EDM Program",
+    "section": "Affiliation",
+    "text": "Affiliation\nThe EDM Program is based in the Data and Analytics Division - Office of Science and Technology at NOAA Fisheries.\n\n\n\n\n\n\nNote\n\n\n\nLooking for domain-specific resources? See the Data Domains and Active Projects pages."
+  },
+  {
+    "objectID": "domains.html",
+    "href": "domains.html",
+    "title": "Data Domains",
+    "section": "",
+    "text": "WarningUnder Construction 🚧\n\n\n\nThe Data Domains directory is currently being updated. Please check back soon!\nIf you questions specifically about data domains, please contact the EDM Program."
+  },
+  {
+    "objectID": "lifecycle.html",
+    "href": "lifecycle.html",
+    "title": "Data Lifecycle",
+    "section": "",
+    "text": "Understanding the data lifecycle is foundational to good science. Every stage — from planning through reuse — has implications for the quality, reproducibility, and long-term value of your data."
+  },
+  {
+    "objectID": "lifecycle.html#why-data-management-matters",
+    "href": "lifecycle.html#why-data-management-matters",
+    "title": "Data Lifecycle",
+    "section": "Why Data Management Matters",
+    "text": "Why Data Management Matters\nGood data management is not just a compliance requirement — it is what makes science trustworthy, reproducible, and useful beyond a single project.\n\n\n\n\n\n\n\n\nFramework\nWhat it requires\nWhy it matters to you\n\n\n\n\nFAIR Data Principles\nData must be Findable, Accessible, Interoperable, and Reusable\nExtends the scientific value of your work; enables others to build on it\n\n\nOSTP Open Science Memo (2022)\nFederally funded research data must be publicly accessible by default\nNOAA data is a public asset — it must be managed well enough to share\n\n\nEvidence Act (2018)\nFederal data must be available for future evidence-building and policy\nData collected with federal resources must be reusable, not just stored\n\n\nInformation Quality Act (IQA)\nDisseminated data must meet documented quality and objectivity standards\nLifecycle practices — versioning, QC, documentation — are how you comply\n\n\nGold Standard Science\nResults must be peer-reviewed, reproducible, and transparently documented\nData lifecycle management is how you operationalize this commitment"
+  },
+  {
+    "objectID": "lifecycle.html#the-data-lifecycle",
+    "href": "lifecycle.html#the-data-lifecycle",
+    "title": "Data Lifecycle",
+    "section": "The Data Lifecycle",
+    "text": "The Data Lifecycle\nThe NOAA Data Life Cycle model (Figure 1, NAO 212-15B Data Management Handbook) provides the official framework for managing NOAA data as a strategic asset. It consists of six primary components and four cross-cutting components that apply throughout.\n\n\n\nNOAA Data Life Cycle diagram\n\n\nFigure 1: The NOAA Data Life Cycle. Source: NAO 212-15B Data Management Handbook.\nSelect a stage below to explore what it involves, what outputs it produces, and how it connects to federal requirements and open science principles. These stages follow the official NOAA Data Life Cycle model from NAO 212-15B.\n\n\n\n\n  \n  \n\n    \n      01\n      📋\n      Plan\n    \n\n    \n      02\n      🔬\n      Collect & Create\n    \n\n    \n      03\n      ⚙️\n      Process & Analyze\n    \n\n    \n      04\n      📤\n      Share & Publish\n    \n\n    \n      05\n      🗄️\n      Preserve\n    \n\n    \n      06\n      ♻️\n      Reuse\n    \n\n  \n\n  \n  \n    \n      \n        📋\n        \n          Plan\n          Define your data strategy before collection begins\n        \n      \n      \n        Evidence Act\n        FAIR\n        OTHER TAG\n      \n      \n\n\n\nOutput\nDescription\n\n\n\n\nData Management Plan\nDocuments storage, sharing, quality, and preservation intentions. Required by NSF, NIH, and NOAA.\n\n\nSOMETHING\nsome materials that come from the plan step\n\n\nSOMETHING\nsome materials that come from the plan step\n\n\n\n\n      Tip: CANNED LANGUAGE A well-written DMP saves significant time and cost downstream. Planning for FAIR and open data from the start costs far less than retrofitting it at the end of a project.\n    \n  \n\n  \n    \n      \n        🔬\n        \n          Collect & Create\n          Capture data with consistency and documentation from day one\n        \n      \n      \n        IQA\n        Gold Standard Science\n        Other Tag\n      \n      \n\n\n\nBest practice\nWhy it matters\n\n\n\n\nStandardized file naming\nPrevents ambiguity and enables automated processing downstream.\n\n\nVersion control from day one\nTracks changes; prevents the \"final_FINAL_v3\" problem.\n\n\nOther Best Practice\nWhy do best practices matter? idk?\n\n\nOther Best Practice\nWhy do best practices matter? idk?\n\n\n\n\n      Some note or tip: Tip about doing better.\n    \n  \n\n  \n    \n      \n        ⚙️\n        \n          Process & Analyze\n          Use documented, reproducible workflows\n        \n      \n      \n        Gold Standard Science\n        Other Tag\n        Open Science\n      \n      \n\n\n\nDo\nAvoid\n\n\n\n\nScripted pipelines (R, Python)\nManual edits in Excel with no change log\n\n\nGit version control for all code\nEmailing scripts back and forth\n\n\nSeparate raw and processed data\nOverwriting raw data files\n\n\nOther things folks should do\nsomething you shouldn't do\n\n\n\n\n      Tips: something about being better\n    \n  \n\n  \n    \n      \n        📤\n        \n          Share & Publish\n          Deposit data with complete metadata and a persistent identifier\n        \n      \n      \n        OPEN Government Data Act\n        Other Tag\n        Evidence Act\n      \n      \n\n\n\nRepository type\nExamples\nBest for\n\n\n\n\nNOAA-specific\nNCEI, InPort\nNOAA observational and environmental data\n\n\nGeneralist\nZenodo, KNB, BCO-DMO, Mendeley, OBIS, Movebank\nData repositories that accept data from individual scientists regardless of data type, format, content, or disciplinary focus.\n\n\nOther Repositories\nList\nUsage\n\n\nNOAA Grantees\nOSF, Pangea, Figshare, Dryad\nFederal employees are not able to agree to the specific terms and conditions of these repositories, however, NOAA grantees may wish to consult their institution's council for additional guidance.\n\n\n\n\n      Open science mandate: Data sharing is required under the OPEN Government Data Act and OSTP memo. Data with a DOI and complete metadata is FAIR data. Data buried in a file share is not.\n    \n  \n\n  \n    \n      \n        🗄️\n        \n          Preserve\n          Ensure data remains accessible and usable long-term\n        \n      \n      \n        Evidence Act\n        Other Tag\n        Other Tag\n      \n      \n\n\n\nPreferred format?\nAvoid\n\n\n\n\nCSV, TSV (tabular)\nXLS, XLSX\n\n\nNetCDF, HDF5 (gridded/array)\nProprietary binary formats\n\n\nGeoTIFF, GeoPackage (spatial)\nVendor-locked GIS formats\n\n\nPlain text, Markdown (docs)\nWord documents as primary records\n\n\n\n\n      Evidence Act: Data must remain available for future evidence-building. Data that cannot be read in 10 years has no long-term scientific or policy value.\n    \n  \n\n  \n    \n      \n        ♻️\n        \n          Reuse\n          Discover, cite, and build on existing datasets responsibly\n        \n      \n      \n        Other Tag\n        Open Science\n        Other Tag\n      \n      \n\n\n\nAction\nHow\n\n\n\n\nCite datasets\nUse the DOI or persistent identifier; include version number\n\n\nDocument changes\nRecord what was changed from the original and why\n\n\nIdk?\nhow to do the thing\n\n\nIdk?\nhow to do the thing\n\n\n\n\n      Tips: Just reuse."
+  },
+  {
+    "objectID": "lifecycle.html#data-domains",
+    "href": "lifecycle.html#data-domains",
+    "title": "Data Lifecycle",
+    "section": "Data Domains",
+    "text": "Data Domains\nEvery NOAA Fisheries area has its own data formats, quality standards, and archival requirements. Visit the Data Domains tab for field-specific GitHub repositories, templates, and guidance organized by science area."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Active Projects",
+    "section": "",
+    "text": "High-level initiatives the team is actively working on. These represent strategic actions to modernize science while advancing data governance and management across NOAA."
+  },
+  {
+    "objectID": "projects.html#current-initiatives",
+    "href": "projects.html#current-initiatives",
+    "title": "Active Projects",
+    "section": "Current Initiatives",
+    "text": "Current Initiatives\n\nEcosystem Status Reports Value Stream Map\nTEXT\nStatus: In progress · Lead: Lisa Peterson\n\n\nStock Assessment Value Stream Map\nTEXT\nStatus: In progress · Leads: Lincoln Rehm & Lisa Peterson\n\n\nData Flow Diagrams\nTEXT\nStatus: In development · Lead: Lisa Peterson\n\n\nTEXT\nTEXT\nStatus: In progress · Lead:\n\n\nTEXT\nTEXT\nStatus: Planning · Lead:"
+  },
+  {
+    "objectID": "projects.html#how-we-prioritize",
+    "href": "projects.html#how-we-prioritize",
+    "title": "Active Projects",
+    "section": "How We Prioritize",
+    "text": "How We Prioritize\nProjects are prioritized based on strategic alignment — if you have a data management need that isn’t represented here, reach out to the team."
+  }
+]

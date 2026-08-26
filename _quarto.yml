@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - "images/"
+
+lang: en-US
+
+website:
+  title: "NOAA Fisheries Enterprise Data Management Program"
+  search: false # Turns off Quarto default search to avoid conflicts
+  repo-url: https://github.com/nmfs-ost/EDM-Program
+  repo-actions: [edit, issue]
+  navbar:
+    background: primary
+    search: false
+    right:
+      - icon: github
+        href: https://github.com/nmfs-ost/EDM-Program
+        aria-label: "View source on GitHub"
+      - text: "Report an Issue"
+        icon: bug
+        href: https://github.com/nmfs-ost/EDM-Program/issues/new
+        aria-label: "Open a GitHub issue"
+  page-footer:
+    left: |
+      Fisheries EDM Program · [NOAA.gov](https://www.noaa.gov) · [Privacy Policy](https://www.noaa.gov/protecting-your-privacy) · [Accessibility Statement](https://www.noaa.gov/accessibility) · [Disclaimer](https://www.noaa.gov/disclaimer)
+    right: "Built with [Quarto](https://quarto.org) · [USA.gov](https://www.usa.gov)"
+
+format:
+  html:
+    theme:
+      light:
+        - cosmo
+        - custom.scss
+      dark:
+        - darkly
+        - custom-dark.scss
+    toc: true
+    toc-title: "On this page"
+    toc-location: right
+    number-sections: false
+    code-fold: true
+    page-layout: full
+    html-math-method: plain
+    include-after-body: sidebar-hover.html

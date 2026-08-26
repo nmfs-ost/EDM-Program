@@ -1,0 +1,31 @@
+---
+title: "EDM Program"
+---
+
+The primary mission of the Enterprise Data Management (EDM) Program is to rigorously apply modern data management best practices to improve business and scientific operations throughout NOAA Fisheries.
+
+::: {.section-card}
+## Focus Areas
+
+| # | Theme | Description |
+|---|---|---|
+| 01 | **ACDO Support** | Supporting the work of the Fisheries Assistant Chief Data Officer (ACDO)|
+| 02 | **Data Governance** | Focusing on Fisheries enterprise data governance, data optimization, metadata, and data centralization and integration |
+| 03 | **FDGC Support** | Supporting the Fisheries Data Governance Committee (FDGC) |
+:::
+
+::: {.section-card}
+## Recent News
+
+**September 2026** — NEWS.
+:::
+
+::: {.section-card}
+## Affiliation
+
+The EDM Program is based in the **Data and Analytics Division - Office of Science and Technology** at NOAA Fisheries.
+
+::: {.callout-note}
+**Looking for domain-specific resources?** See the [Data Domains](domains.qmd) and [Active Projects](projects.qmd) pages.
+:::
+:::

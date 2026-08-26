@@ -1,0 +1,41 @@
+---
+title: "Active Projects"
+---
+
+High-level initiatives the team is actively working on. These represent strategic actions to modernize science while advancing data governance and management across NOAA.
+
+## Current Initiatives
+
+### Ecosystem Status Reports Value Stream Map
+
+TEXT
+
+**Status:** In progress  ·  **Lead:** Lisa Peterson
+
+### Stock Assessment Value Stream Map
+
+TEXT
+
+**Status:** In progress  ·  **Leads:** Lincoln Rehm & Lisa Peterson
+
+### Data Flow Diagrams
+
+TEXT
+
+**Status:** In development  ·  **Lead:** Lisa Peterson
+
+### TEXT
+
+TEXT
+
+**Status:** In progress  ·  **Lead:**
+
+### TEXT
+
+TEXT
+
+**Status:** Planning  ·  **Lead:**
+
+## How We Prioritize
+
+Projects are prioritized based on strategic alignment — if you have a data management need that isn't represented here, [reach out to the team](mailto:datagov@agency.gov).

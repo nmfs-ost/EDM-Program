@@ -1,0 +1,9 @@
+---
+title: "Data Domains"
+---
+::: callout-warning
+## Under Construction 🚧
+The Data Domains directory is currently being updated. Please check back soon!
+
+If you questions specifically about data domains, please [contact the EDM Program](mailto:lincoln.rehm@noaa.gov).
+:::
