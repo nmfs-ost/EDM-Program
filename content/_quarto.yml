@@ -4,11 +4,9 @@ project:
   resources:
     - "images/"
 
-lang: en-US
-
 website:
   title: "NOAA Fisheries Enterprise Data Management Program"
-  search: false # Turns off Quarto default search to avoid conflicts
+  search: false
   repo-url: https://github.com/nmfs-ost/EDM-Program
   repo-actions: [edit, issue]
   navbar:
