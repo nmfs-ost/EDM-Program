@@ -23,7 +23,7 @@ The primary mission of the Enterprise Data Management (EDM) Program is to rigoro
 ::: {.section-card}
 ## Affiliation
 
-The EDM Program is based in the **Data and Analytics Division - Office of Science and Technology** at NOAA Fisheries.
+The EDM Program is based in the **Science Information Division - Office of Science and Technology** at NOAA Fisheries.
 
 ::: {.callout-note}
 **Looking for domain-specific resources?** See the [Data Domains](domains.qmd) and [Active Projects](projects.qmd) pages.
