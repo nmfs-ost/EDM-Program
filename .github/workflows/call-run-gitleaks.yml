@@ -6,6 +6,11 @@ name: Call Run GitLeaks
 # https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 # The default build trigger is to run the action on every push and pull request, for any branch
 on: [push, pull_request, workflow_dispatch]
+
+# Explicitly limit permissions to adhere to least privilege (fixes CodeQL alert)
+permissions:
+  contents: read
+
 # This workflow calls a reusable github action located at 
 # https://github.com/nmfs-ost/admin/blob/main/.github/workflows/run-gitleaks.yml
 # Learn more about reusable actions: https://docs.github.com/en/actions/using-workflows/reusing-workflows
