@@ -47,7 +47,7 @@ DG coordination and tactical support.
 `matthew.long@noaa.gov`
 
 ### Leonora Fukuda
-**Strategic Initiative Coordinator**
+**Strategic Initiative Coordinator & IT Liaison**
 
 Strategic Initiatives coordination and data management / governance support.
 
@@ -59,12 +59,6 @@ Strategic Initiatives coordination and data management / governance support.
 Specialized support for pilot-phase initiatives.
 
 `melissa.yencho@noaa.gov`
-:::
-
-::: {.team-section}
-## Support & Contributors
-
-Individuals and groups outside the core program who regularly contribute to or collaborate on our work.
 
 ### Scott Sauri
 **Application Development Branch - Fisheries Office of Chief Information Officer**
@@ -74,11 +68,17 @@ Bridging EDM initiatives with OCIO standards/resources.
 `scott.sauri@noaa.gov`
 
 ### Tim Haverland
-**GIS App Developer · Fisheries Office of Science and Technology**
+**GIS Subject Matter Expert**
 
 GIS data, products, and tool optimization.
 
 `tim.haverland@noaa.gov`
+:::
+
+::: {.team-section}
+## Support & Contributors
+
+Individuals and groups outside the core program who regularly contribute to or collaborate on our work.
 
 ### Fisheries Information System (FIS)
 
