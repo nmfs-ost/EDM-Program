@@ -67,8 +67,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/image_9085aa.png" alt="" class="navbar-logo light-content">
-    <img src="./images/image_9085aa.png" alt="" class="navbar-logo dark-content">
+    <img src="./images/edmlogo_nottransparent.png" alt="" class="navbar-logo light-content">
+    <img src="./images/edmlogo_nottransparent.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Fisheries EDM Program</span>
@@ -494,9 +494,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-/* ── Custom Centered Layout ── */
-
-/* Hide the default left sidebar, but KEEP the right margin for the Table of Contents */
+/* ── Custom Layout Overrides ── */
 
 #quarto-sidebar,
 
@@ -508,8 +506,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-/* Center the main content block on the screen */
-
 #quarto-content {
 
   justify-content: center;
@@ -517,8 +513,6 @@ ul.task-list li input[type="checkbox"] {
 }
 
 
-
-/* Constrain the text width and center it, keeping headers and text aligned */
 
 #quarto-document-content {
 
@@ -544,7 +538,7 @@ ul.task-list li input[type="checkbox"] {
 
   height: 100vh;
 
-  background: #003087; /* Matching the new Slate Blue-Grey */
+  background: #003087;
 
   z-index: 1100;
 
@@ -878,7 +872,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-/* ── Page offset ── */
+/* ── Page offset & Responsive Layout ── */
 
 body { padding-left: 52px !important; }
 
@@ -888,11 +882,43 @@ body { padding-left: 52px !important; }
 
 @media (max-width: 767px) {
 
-  #dg-icon-strip, #dg-sidebar-panel { display: none !important; }
+  #dg-icon-strip {
 
-  body { padding-left: 0 !important; }
+    padding-top: 10px !important;
 
-  .navbar { padding-left: 1rem !important; }
+    z-index: 2000 !important;
+
+  }
+
+  
+
+  #dg-sidebar-panel {
+
+    top: 0 !important;
+
+    left: 52px !important;
+
+    z-index: 1999 !important;
+
+    width: calc(100vw - 52px) !important;
+
+  }
+
+
+
+  body { 
+
+    padding-left: 52px !important; 
+
+  }
+
+
+
+  .navbar { 
+
+    padding-left: calc(52px + 0.5rem) !important; 
+
+  }
 
 }
 
@@ -907,12 +933,6 @@ body { padding-left: 52px !important; }
 <nav id="dg-icon-strip" role="navigation" aria-label="Section navigation">
 
 
-
-  <a href="index.html" aria-label="EDM Program Home" style="display: flex; justify-content: center; margin-bottom: 1.2rem; margin-top: -10px; text-decoration: none;">
-
-  <img src="images/edmlogo.png" alt="EDM Logo" style="width: 44px; height: 44px; border-radius: 50%; background-color: #003087; border: 2px solid #003087; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
-
-</a>
 
 
 
@@ -934,7 +954,7 @@ body { padding-left: 52px !important; }
 
     <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 
-      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
 
     </svg>
 
@@ -1088,9 +1108,9 @@ body { padding-left: 52px !important; }
 
 
 
- <div class="dg-panel-section" id="panel-lifecycle" role="group" aria-labelledby="panel-lifecycle-title">
+  <div class="dg-panel-section" id="panel-lifecycle" role="group" aria-labelledby="panel-lifecycle-title">
 
-    <div class="dg-panel-title" id="panel-lifecycle-title">Data Domains</div>
+    <div class="dg-panel-title" id="panel-lifecycle-title">Data Lifecycle</div>
 
     <a href="lifecycle.html" class="dg-panel-link">Overview</a>
 
@@ -1098,7 +1118,9 @@ body { padding-left: 52px !important; }
 
       <em>🚧 This page is currently under construction. Please check back later.</em>
 
-  </p></div>
+    </p>
+
+  </div>
 
 
 
@@ -1158,8 +1180,6 @@ body { padding-left: 52px !important; }
 
 
 
-  // Detect current page section
-
   const page = window.location.pathname.split('/').pop().replace('.html','') || 'index';
 
   const pageMap = { 'index':'home','team':'team','policies':'policies','lifecycle':'lifecycle','projects':'projects','domains':'domains' };
@@ -1167,8 +1187,6 @@ body { padding-left: 52px !important; }
   const currentSection = pageMap[page] || 'home';
 
 
-
-  // Mark active navigation items
 
   items.forEach(item => {
 
@@ -1187,8 +1205,6 @@ body { padding-left: 52px !important; }
     if (target) target.classList.add('active');
 
     
-
-    // Set matching tracking classes
 
     const currentFile = window.location.pathname.split('/').pop() || 'index.html';
 
@@ -1228,23 +1244,33 @@ body { padding-left: 52px !important; }
 
 
 
-  // Bind events to navigation layout elements
+  let hoverTimer;
+
+
 
   items.forEach(item => {
 
-    // CLICK INTERCEPTOR: Shuts the drawer and forces window to jump instantly to Overview
+    // TOUCH / CLICK ENGINE: Handles tap interactions on phones and click selection
 
     item.addEventListener('click', (e) => {
 
-      e.preventDefault(); 
+      const sectionId = item.dataset.section;
 
-      const destination = item.getAttribute('href');
+      const targetPanel = document.getElementById('panel-' + sectionId);
 
-      if (destination) {
+      const isPanelOpen = panel.classList.contains('open') && targetPanel && targetPanel.classList.contains('active');
+
+
+
+      if (!isPanelOpen) {
+
+        e.preventDefault();
+
+        openPanel(sectionId);
+
+      } else {
 
         closePanel();
-
-        window.location.href = destination;
 
       }
 
@@ -1252,7 +1278,7 @@ body { padding-left: 52px !important; }
 
 
 
-    // HOVER ENGINE: Swaps internal drawer layouts dynamically on slide/hover entry
+    // HOVER ENGINE FOR DESKTOP
 
     let buttonTimer;
 
@@ -1279,10 +1305,6 @@ body { padding-left: 52px !important; }
   });
 
 
-
-  // Structural boundary timeouts
-
-  let hoverTimer;
 
   strip.addEventListener('mouseleave', e => {
 
@@ -1312,7 +1334,7 @@ body { padding-left: 52px !important; }
 
 
 
-  // ── Search Engine Index Integration ──
+  // ── Search Engine Index ──
 
   const searchInput   = document.getElementById('dg-search-input');
 
@@ -1346,19 +1368,7 @@ body { padding-left: 52px !important; }
 
     { title: 'Other Guidance',                          section: 'Data Policies & Guidance',    url: 'policies.html#other-guidance' },
 
-    { title: 'Why Data Management Matters', section: 'Data Lifecycle',          url: 'lifecycle.html#why-data-management-matters' },
-
-    { title: 'Plan',                    section: 'Data Lifecycle',              url: 'lifecycle.html#plan' },
-
-    { title: 'Obtain',                  section: 'Data Lifecycle',              url: 'lifecycle.html#obtain' },
-
-    { title: 'Process',                 section: 'Data Lifecycle',              url: 'lifecycle.html#process' },
-
-    { title: 'Preserve',                section: 'Data Lifecycle',              url: 'lifecycle.html#preserve' },
-
-    { title: 'Access',                  section: 'Data Lifecycle',              url: 'lifecycle.html#access' },
-
-    { title: 'Disposition',             section: 'Data Lifecycle',              url: 'lifecycle.html#disposition' },
+    { title: 'Data Lifecycle (Under Construction)',     section: 'Data Lifecycle',              url: 'lifecycle.html' },
 
     { title: 'Ecosystem Status Reports Value Stream Map', section: 'Active Projects',   url: 'projects.html#fair-data-implementation' },
 
@@ -1366,7 +1376,7 @@ body { padding-left: 52px !important; }
 
     { title: 'Data Flow Diagrams',                        section: 'Active Projects',   url: 'projects.html#cloud-data-migration-guidance' },
 
-    {title: 'Data Domains (Under Construction)',         section: 'Data Domains',      url: 'domains.html'}
+    { title: 'Data Domains (Under Construction)',         section: 'Data Domains',      url: 'domains.html' }
 
   ];
 
@@ -1384,15 +1394,19 @@ body { padding-left: 52px !important; }
 
     
 
-    // Section 508 accessibility checkpoint: explicitly defining interactive keyboard result routes via tab index
-
-    searchResults.innerHTML = matches.map((m, i) => `<li><a class="dg-search-result" href="${m.url}" tabindex="0"><span class="dg-search-result-title">${m.title}</span><span class="dg-search-result-section">${m.section}</span></a></li>`).join('');
+    searchResults.innerHTML = matches.map((m) => `<li><a class="dg-search-result" href="${m.url}" tabindex="0"><span class="dg-search-result-title">${m.title}</span><span class="dg-search-result-section">${m.section}</span></a></li>`).join('');
 
     searchResults.hidden = false;
 
   }
 
-  searchInput.addEventListener('input', () => runSearch(searchInput.value));
+  
+
+  if (searchInput) {
+
+    searchInput.addEventListener('input', () => runSearch(searchInput.value));
+
+  }
 
 })();
 

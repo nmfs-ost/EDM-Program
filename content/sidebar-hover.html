@@ -119,19 +119,16 @@
   outline-offset: 2px;
 }
 
-/* ── Custom Centered Layout ── */
-/* Hide the default left sidebar, but KEEP the right margin for the Table of Contents */
+/* ── Custom Layout Overrides ── */
 #quarto-sidebar,
 #quarto-sidebar-glass { 
   display: none !important; 
 }
 
-/* Center the main content block on the screen */
 #quarto-content {
   justify-content: center;
 }
 
-/* Constrain the text width and center it, keeping headers and text aligned */
 #quarto-document-content {
   max-width: 850px !important;
   margin: 0 auto !important; 
@@ -144,7 +141,7 @@
   left: 0;
   width: 52px;
   height: 100vh;
-  background: #003087; /* Matching the new Slate Blue-Grey */
+  background: #003087;
   z-index: 1100;
   display: flex;
   flex-direction: column;
@@ -311,14 +308,30 @@
 }
 #dg-overlay.active { display: block; }
 
-/* ── Page offset ── */
+/* ── Page offset & Responsive Layout ── */
 body { padding-left: 52px !important; }
 .navbar { padding-left: calc(52px + 1rem) !important; }
 
 @media (max-width: 767px) {
-  #dg-icon-strip, #dg-sidebar-panel { display: none !important; }
-  body { padding-left: 0 !important; }
-  .navbar { padding-left: 1rem !important; }
+  #dg-icon-strip {
+    padding-top: 10px !important;
+    z-index: 2000 !important;
+  }
+  
+  #dg-sidebar-panel {
+    top: 0 !important;
+    left: 52px !important;
+    z-index: 1999 !important;
+    width: calc(100vw - 52px) !important;
+  }
+
+  body { 
+    padding-left: 52px !important; 
+  }
+
+  .navbar { 
+    padding-left: calc(52px + 0.5rem) !important; 
+  }
 }
 </style>
 
@@ -326,9 +339,6 @@ body { padding-left: 52px !important; }
 
 <nav id="dg-icon-strip" role="navigation" aria-label="Section navigation">
 
-  <a href="index.html" aria-label="EDM Program Home" style="display: flex; justify-content: center; margin-bottom: 1.2rem; margin-top: -10px; text-decoration: none;">
-  <img src="images/edmlogo.png" alt="EDM Logo" style="width: 44px; height: 44px; border-radius: 50%; background-color: #003087; border: 2px solid #003087; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
-</a>
 
   <a href="index.html" class="dg-strip-item" data-section="home"
      aria-label="Home Overview" aria-controls="dg-sidebar-panel">
@@ -341,7 +351,7 @@ body { padding-left: 52px !important; }
   <a href="team.html" class="dg-strip-item" data-section="team"
      aria-label="Team Overview" aria-controls="dg-sidebar-panel">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
     </svg>
     <span class="dg-strip-label" aria-hidden="true">Team</span>
   </a>
@@ -422,11 +432,12 @@ body { padding-left: 52px !important; }
     <a href="policies.html#other-guidance" class="dg-panel-link">Other Guidance</a>
   </div>
 
- <div class="dg-panel-section" id="panel-lifecycle" role="group" aria-labelledby="panel-lifecycle-title">
-    <div class="dg-panel-title" id="panel-lifecycle-title">Data Domains</div>
+  <div class="dg-panel-section" id="panel-lifecycle" role="group" aria-labelledby="panel-lifecycle-title">
+    <div class="dg-panel-title" id="panel-lifecycle-title">Data Lifecycle</div>
     <a href="lifecycle.html" class="dg-panel-link">Overview</a>
     <p class="dg-panel-subsection" role="heading" aria-level="3" style="text-transform: none; letter-spacing: normal; font-weight: normal; color: #595f6b; margin-top: 0.5rem; line-height: 1.5;">
       <em>🚧 This page is currently under construction. Please check back later.</em>
+    </p>
   </div>
 
   <div class="dg-panel-section" id="panel-projects" role="group" aria-labelledby="panel-projects-title">
@@ -457,12 +468,10 @@ body { padding-left: 52px !important; }
   const items    = Array.from(strip.querySelectorAll('.dg-strip-item'));
   const sections = panel.querySelectorAll('.dg-panel-section');
 
-  // Detect current page section
   const page = window.location.pathname.split('/').pop().replace('.html','') || 'index';
   const pageMap = { 'index':'home','team':'team','policies':'policies','lifecycle':'lifecycle','projects':'projects','domains':'domains' };
   const currentSection = pageMap[page] || 'home';
 
-  // Mark active navigation items
   items.forEach(item => {
     if (item.dataset.section === currentSection) item.classList.add('active');
   });
@@ -472,7 +481,6 @@ body { padding-left: 52px !important; }
     const target = document.getElementById('panel-' + sectionId);
     if (target) target.classList.add('active');
     
-    // Set matching tracking classes
     const currentFile = window.location.pathname.split('/').pop() || 'index.html';
     panel.querySelectorAll('.dg-panel-link').forEach(a => {
       const href = a.getAttribute('href') || '';
@@ -492,19 +500,24 @@ body { padding-left: 52px !important; }
     items.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
   }
 
-  // Bind events to navigation layout elements
+  let hoverTimer;
+
   items.forEach(item => {
-    // CLICK INTERCEPTOR: Shuts the drawer and forces window to jump instantly to Overview
+    // TOUCH / CLICK ENGINE: Handles tap interactions on phones and click selection
     item.addEventListener('click', (e) => {
-      e.preventDefault(); 
-      const destination = item.getAttribute('href');
-      if (destination) {
+      const sectionId = item.dataset.section;
+      const targetPanel = document.getElementById('panel-' + sectionId);
+      const isPanelOpen = panel.classList.contains('open') && targetPanel && targetPanel.classList.contains('active');
+
+      if (!isPanelOpen) {
+        e.preventDefault();
+        openPanel(sectionId);
+      } else {
         closePanel();
-        window.location.href = destination;
       }
     });
 
-    // HOVER ENGINE: Swaps internal drawer layouts dynamically on slide/hover entry
+    // HOVER ENGINE FOR DESKTOP
     let buttonTimer;
     item.addEventListener('mouseenter', () => {
       clearTimeout(hoverTimer);
@@ -518,8 +531,6 @@ body { padding-left: 52px !important; }
     });
   });
 
-  // Structural boundary timeouts
-  let hoverTimer;
   strip.addEventListener('mouseleave', e => {
     if (!panel.contains(e.relatedTarget)) hoverTimer = setTimeout(closePanel, 200);
   });
@@ -534,7 +545,7 @@ body { padding-left: 52px !important; }
     if (e.key === 'Escape' && panel.classList.contains('open')) closePanel();
   });
 
-  // ── Search Engine Index Integration ──
+  // ── Search Engine Index ──
   const searchInput   = document.getElementById('dg-search-input');
   const searchResults = document.getElementById('dg-search-results');
 
@@ -551,17 +562,11 @@ body { padding-left: 52px !important; }
     { title: 'Guidance for Adding Records to InPort',    section: 'Data Policies & Guidance',    url: 'policies.html#guidance-for-adding-new-metadata-records-to-inport' },
     { title: 'Metadata Completeness and Quality Checks', section: 'Data Policies & Guidance',    url: 'policies.html#metadata-completeness-and-quality-checks' },
     { title: 'Other Guidance',                          section: 'Data Policies & Guidance',    url: 'policies.html#other-guidance' },
-    { title: 'Why Data Management Matters', section: 'Data Lifecycle',          url: 'lifecycle.html#why-data-management-matters' },
-    { title: 'Plan',                    section: 'Data Lifecycle',              url: 'lifecycle.html#plan' },
-    { title: 'Obtain',                  section: 'Data Lifecycle',              url: 'lifecycle.html#obtain' },
-    { title: 'Process',                 section: 'Data Lifecycle',              url: 'lifecycle.html#process' },
-    { title: 'Preserve',                section: 'Data Lifecycle',              url: 'lifecycle.html#preserve' },
-    { title: 'Access',                  section: 'Data Lifecycle',              url: 'lifecycle.html#access' },
-    { title: 'Disposition',             section: 'Data Lifecycle',              url: 'lifecycle.html#disposition' },
+    { title: 'Data Lifecycle (Under Construction)',     section: 'Data Lifecycle',              url: 'lifecycle.html' },
     { title: 'Ecosystem Status Reports Value Stream Map', section: 'Active Projects',   url: 'projects.html#fair-data-implementation' },
     { title: 'Stock Assessment Value Stream Map',         section: 'Active Projects',   url: 'projects.html#federal-policy-compliance-tracker' },
     { title: 'Data Flow Diagrams',                        section: 'Active Projects',   url: 'projects.html#cloud-data-migration-guidance' },
-    {title: 'Data Domains (Under Construction)',         section: 'Data Domains',      url: 'domains.html'}
+    { title: 'Data Domains (Under Construction)',         section: 'Data Domains',      url: 'domains.html' }
   ];
 
   function runSearch(query) {
@@ -570,10 +575,12 @@ body { padding-left: 52px !important; }
     const matches = siteIndex.filter(item => item.title.toLowerCase().includes(q) || item.section.toLowerCase().includes(q)).slice(0, 8);
     if (!matches.length) { searchResults.innerHTML = `<div class="dg-search-no-results">No results for "${query}"</div>`; searchResults.hidden = false; return; }
     
-    // Section 508 accessibility checkpoint: explicitly defining interactive keyboard result routes via tab index
-    searchResults.innerHTML = matches.map((m, i) => `<li><a class="dg-search-result" href="${m.url}" tabindex="0"><span class="dg-search-result-title">${m.title}</span><span class="dg-search-result-section">${m.section}</span></a></li>`).join('');
+    searchResults.innerHTML = matches.map((m) => `<li><a class="dg-search-result" href="${m.url}" tabindex="0"><span class="dg-search-result-title">${m.title}</span><span class="dg-search-result-section">${m.section}</span></a></li>`).join('');
     searchResults.hidden = false;
   }
-  searchInput.addEventListener('input', () => runSearch(searchInput.value));
+  
+  if (searchInput) {
+    searchInput.addEventListener('input', () => runSearch(searchInput.value));
+  }
 })();
 </script>

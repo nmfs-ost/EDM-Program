@@ -12,7 +12,7 @@ website:
 
   navbar:
     title: "Fisheries EDM Program"
-    logo: "images/image_9085aa.png"
+    logo: "images/edmlogo_nottransparent.png"
     background: primary
     search: false
     right:
