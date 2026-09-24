@@ -87,7 +87,7 @@ main.content#quarto-document-content,
   }
 }
 
-/* ── Universal Section Card Containers (Used in Index, Team, & Policies) ── */
+/* ── Universal Section Card Containers ── */
 .team-section,
 .policy-section,
 .section-card {
@@ -105,6 +105,62 @@ main.content#quarto-document-content,
     border-bottom: 2px solid $secondary;
   }
 }
+
+/* ── Person Entries & Dividers ── */
+.person {
+  display: block;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e2e8f0;
+
+  &:first-of-type {
+    padding-top: 0.5rem;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0.25rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Style mailto links cleanly */
+  a {
+    color: $secondary !important;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.person-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: $primary;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+
+.person-role { font-size: 0.78rem; color: $secondary; margin-bottom: 0.2rem; }
+.person-bio  { font-size: 0.85rem; color: #4b5563; margin: 0; line-height: 1.6; }
 
 /* ── Navigation (Navbar & Sidebar) ── */
 .navbar {
@@ -266,36 +322,6 @@ nav[role="doc-toc"] ul li {
   color: #595f6b;
   margin-top: 0.2rem;
 }
-
-.person {
-  display: flex;
-  gap: 1.1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid #f3f4f6;
-  align-items: flex-start;
-
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-.person-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: $primary;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  flex-shrink: 0;
-}
-
-.person-role { font-size: 0.78rem; color: $secondary; margin-bottom: 0.2rem; }
-.person-bio  { font-size: 0.85rem; color: #4b5563; margin: 0; line-height: 1.6; }
 
 .pkg {
   padding: 1rem 0;

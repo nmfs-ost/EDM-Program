@@ -5,11 +5,13 @@ project:
     - "images/"
 
 website:
-  title: "NOAA Fisheries Enterprise Data Management Program"
+  title: "Fisheries EDM Program"
   search: false
   repo-url: https://github.com/nmfs-ost/EDM-Program
-  repo-actions: [edit, issue]
+  repo-actions: [issue]
   navbar:
+    title: "Fisheries EDM Program"
+    logo: "images/image_9085aa.png" # 1. Added the logo to the navbar here
     background: primary
     search: false
     right:
@@ -31,14 +33,12 @@ format:
       light:
         - cosmo
         - custom.scss
-      dark:
-        - darkly
-        - custom-dark.scss
     toc: true
     toc-title: "On this page"
     toc-location: right
     number-sections: false
     code-fold: true
-    page-layout: full
+    grid:                # 2. Replaced page-layout: full with grid width
+      body-width: 1100px # This expands the center while keeping text readable
     html-math-method: plain
     include-after-body: sidebar-hover.html

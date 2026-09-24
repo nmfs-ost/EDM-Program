@@ -1,5 +1,5 @@
 ---
-title: "Team"
+title: "EDM Program Team"
 ---
 
 The EDM Program is an executive-supported team with a deep knowledgebase of data governance and data management. The team excels at working on multiple efforts at once, dedicated to improving data stewardship, data management, and ultimately science for NOAA Fisheries. Furthermore, the EDM Program’s well-established, collaborative relationship across the FMCs, NOAA writ large, FIS, external partners like the FINs (Fishery Information Network), and OCIO uniquely positions the program to drive enterprise-wide data management strategies.
@@ -7,72 +7,90 @@ The EDM Program is an executive-supported team with a deep knowledgebase of data
 ::: {.team-section}
 ## Leadership
 
+::: {.person}
 ### Dr. Michael Liddel
 **Assistant Chief Data Officer (ACDO)**
 
 Strategic oversight, resource authorization, and final accountability.
 
-`michael.liddel@noaa.gov`
+[michael.liddel@noaa.gov](mailto:michael.liddel@noaa.gov)
+:::
 
+::: {.person}
 ### Dr. Lisa Peterson
 **EDM Program Lead**
 
 Program management, team health, and cross-functional alignment.
 
-`lisa.peterson@noaa.gov`
+[lisa.peterson@noaa.gov](mailto:lisa.peterson@noaa.gov)
+:::
 :::
 
 ::: {.team-section}
 ## Program Members
 
+::: {.person}
 ### Dr. Lincoln Rehm
 **Data Optimization Lead**
 
 Technical strategy and leadership for data-driven initiatives.
 
-`lincoln.rehm@noaa.gov`
+[lincoln.rehm@noaa.gov](mailto:lincoln.rehm@noaa.gov)
+:::
 
+::: {.person}
 ### Priya Jhanghiani
 **Data Governance Coordinator and MIST Lead**
 
 Data Governance (DG) coordination, support, and MIST workflow management.
 
-`priya.jhanghianin@noaa.gov`
+[priya.jhanghianin@noaa.gov](mailto:priya.jhanghianin@noaa.gov)
+:::
 
+::: {.person}
 ### Matthew "Chase" Long
 **Data Governance Advisor & Coordinator**
 
 DG coordination and tactical support.
 
-`matthew.long@noaa.gov`
+[matthew.long@noaa.gov](mailto:matthew.long@noaa.gov)
+:::
 
+::: {.person}
 ### Leonora Fukuda
 **Strategic Initiative Coordinator & IT Liaison**
 
 Strategic Initiatives coordination and data management / governance support.
 
-`leonora.fukuda@noaa.gov`
+[leonora.fukuda@noaa.gov](mailto:leonora.fukuda@noaa.gov)
+:::
 
+::: {.person}
 ### Melissa Yencho
 **Pilot Project Support**
 
 Specialized support for pilot-phase initiatives.
 
-`melissa.yencho@noaa.gov`
+[melissa.yencho@noaa.gov](mailto:melissa.yencho@noaa.gov)
+:::
 
+::: {.person}
 ### Scott Sauri
 **Application Development Branch - Fisheries Office of Chief Information Officer**
 
 Bridging EDM initiatives with OCIO standards/resources.
 
-`scott.sauri@noaa.gov`
+[scott.sauri@noaa.gov](mailto:scott.sauri@noaa.gov)
+:::
 
+::: {.person}
 ### Tim Haverland
 **GIS Subject Matter Expert**
 
 GIS data, products, and tool optimization.
 
-`tim.haverland@noaa.gov`
+[tim.haverland@noaa.gov](mailto:tim.haverland@noaa.gov)
+:::
 :::
 
 ::: {.team-section}
@@ -80,13 +98,17 @@ GIS data, products, and tool optimization.
 
 Individuals and groups outside the core program who regularly contribute to or collaborate on our work.
 
+::: {.person}
 ### Fisheries Information System (FIS)
 
 The Fisheries Information System program is a state-regional-federal partnership supporting sound, science-based fisheries management.
+:::
 
+::: {.person}
 ### Fisheries Data Governance Committee (FDGC)
 
 The purpose of the FDGC is to enable NOAA Fisheries to maximize the value of its data assets through sound and coordinated data governance and management practices.
+:::
 :::
 
 Want to collaborate or contribute? [Get in touch](mailto:lincoln.rehm@noaa.gov)

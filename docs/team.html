@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Team – NOAA Fisheries Enterprise Data Management Program</title>
+<title>EDM Program Team – Fisheries EDM Program</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,14 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-033c68bfce0b10788c3db9554130df63.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-371f4e6bb1ce50d0cbf13cc6892c5edc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-033c68bfce0b10788c3db9554130df63.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-caafac13074b6211e66da19cc5adf80a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -63,177 +59,19 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/image_9085aa.png" alt="" class="navbar-logo light-content">
+    <img src="./images/image_9085aa.png" alt="" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">NOAA Fisheries Enterprise Data Management Program</span>
+    <span class="navbar-title">Fisheries EDM Program</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -254,13 +92,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -289,20 +126,19 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#fisheries-data-governance-committee-fdgc" id="toc-fisheries-data-governance-committee-fdgc" class="nav-link" data-scroll-target="#fisheries-data-governance-committee-fdgc">Fisheries Data Governance Committee (FDGC)</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-ost/EDM-Program/edit/main/team.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-ost/EDM-Program/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-ost/EDM-Program/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Team</h1>
+<h1 class="title">EDM Program Team</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
   
@@ -317,72 +153,72 @@ ul.task-list li input[type="checkbox"] {
 <p>The EDM Program is an executive-supported team with a deep knowledgebase of data governance and data management. The team excels at working on multiple efforts at once, dedicated to improving data stewardship, data management, and ultimately science for NOAA Fisheries. Furthermore, the EDM Program’s well-established, collaborative relationship across the FMCs, NOAA writ large, FIS, external partners like the FINs (Fishery Information Network), and OCIO uniquely positions the program to drive enterprise-wide data management strategies.</p>
 <section id="leadership" class="level2 team-section">
 <h2 class="anchored" data-anchor-id="leadership">Leadership</h2>
-<section id="dr.-michael-liddel" class="level3">
+<section id="dr.-michael-liddel" class="level3 person">
 <h3 class="anchored" data-anchor-id="dr.-michael-liddel">Dr.&nbsp;Michael Liddel</h3>
 <p><strong>Assistant Chief Data Officer (ACDO)</strong></p>
 <p>Strategic oversight, resource authorization, and final accountability.</p>
-<p><code>michael.liddel@noaa.gov</code></p>
+<p><a href="mailto:michael.liddel@noaa.gov">michael.liddel@noaa.gov</a></p>
 </section>
-<section id="dr.-lisa-peterson" class="level3">
+<section id="dr.-lisa-peterson" class="level3 person">
 <h3 class="anchored" data-anchor-id="dr.-lisa-peterson">Dr.&nbsp;Lisa Peterson</h3>
 <p><strong>EDM Program Lead</strong></p>
 <p>Program management, team health, and cross-functional alignment.</p>
-<p><code>lisa.peterson@noaa.gov</code></p>
+<p><a href="mailto:lisa.peterson@noaa.gov">lisa.peterson@noaa.gov</a></p>
 </section>
 </section>
 <section id="program-members" class="level2 team-section">
 <h2 class="anchored" data-anchor-id="program-members">Program Members</h2>
-<section id="dr.-lincoln-rehm" class="level3">
+<section id="dr.-lincoln-rehm" class="level3 person">
 <h3 class="anchored" data-anchor-id="dr.-lincoln-rehm">Dr.&nbsp;Lincoln Rehm</h3>
 <p><strong>Data Optimization Lead</strong></p>
 <p>Technical strategy and leadership for data-driven initiatives.</p>
-<p><code>lincoln.rehm@noaa.gov</code></p>
+<p><a href="mailto:lincoln.rehm@noaa.gov">lincoln.rehm@noaa.gov</a></p>
 </section>
-<section id="priya-jhanghiani" class="level3">
+<section id="priya-jhanghiani" class="level3 person">
 <h3 class="anchored" data-anchor-id="priya-jhanghiani">Priya Jhanghiani</h3>
 <p><strong>Data Governance Coordinator and MIST Lead</strong></p>
 <p>Data Governance (DG) coordination, support, and MIST workflow management.</p>
-<p><code>priya.jhanghianin@noaa.gov</code></p>
+<p><a href="mailto:priya.jhanghianin@noaa.gov">priya.jhanghianin@noaa.gov</a></p>
 </section>
-<section id="matthew-chase-long" class="level3">
+<section id="matthew-chase-long" class="level3 person">
 <h3 class="anchored" data-anchor-id="matthew-chase-long">Matthew “Chase” Long</h3>
 <p><strong>Data Governance Advisor &amp; Coordinator</strong></p>
 <p>DG coordination and tactical support.</p>
-<p><code>matthew.long@noaa.gov</code></p>
+<p><a href="mailto:matthew.long@noaa.gov">matthew.long@noaa.gov</a></p>
 </section>
-<section id="leonora-fukuda" class="level3">
+<section id="leonora-fukuda" class="level3 person">
 <h3 class="anchored" data-anchor-id="leonora-fukuda">Leonora Fukuda</h3>
 <p><strong>Strategic Initiative Coordinator &amp; IT Liaison</strong></p>
 <p>Strategic Initiatives coordination and data management / governance support.</p>
-<p><code>leonora.fukuda@noaa.gov</code></p>
+<p><a href="mailto:leonora.fukuda@noaa.gov">leonora.fukuda@noaa.gov</a></p>
 </section>
-<section id="melissa-yencho" class="level3">
+<section id="melissa-yencho" class="level3 person">
 <h3 class="anchored" data-anchor-id="melissa-yencho">Melissa Yencho</h3>
 <p><strong>Pilot Project Support</strong></p>
 <p>Specialized support for pilot-phase initiatives.</p>
-<p><code>melissa.yencho@noaa.gov</code></p>
+<p><a href="mailto:melissa.yencho@noaa.gov">melissa.yencho@noaa.gov</a></p>
 </section>
-<section id="scott-sauri" class="level3">
+<section id="scott-sauri" class="level3 person">
 <h3 class="anchored" data-anchor-id="scott-sauri">Scott Sauri</h3>
 <p><strong>Application Development Branch - Fisheries Office of Chief Information Officer</strong></p>
 <p>Bridging EDM initiatives with OCIO standards/resources.</p>
-<p><code>scott.sauri@noaa.gov</code></p>
+<p><a href="mailto:scott.sauri@noaa.gov">scott.sauri@noaa.gov</a></p>
 </section>
-<section id="tim-haverland" class="level3">
+<section id="tim-haverland" class="level3 person">
 <h3 class="anchored" data-anchor-id="tim-haverland">Tim Haverland</h3>
 <p><strong>GIS Subject Matter Expert</strong></p>
 <p>GIS data, products, and tool optimization.</p>
-<p><code>tim.haverland@noaa.gov</code></p>
+<p><a href="mailto:tim.haverland@noaa.gov">tim.haverland@noaa.gov</a></p>
 </section>
 </section>
 <section id="support-contributors" class="level2 team-section">
 <h2 class="anchored" data-anchor-id="support-contributors">Support &amp; Contributors</h2>
 <p>Individuals and groups outside the core program who regularly contribute to or collaborate on our work.</p>
-<section id="fisheries-information-system-fis" class="level3">
+<section id="fisheries-information-system-fis" class="level3 person">
 <h3 class="anchored" data-anchor-id="fisheries-information-system-fis">Fisheries Information System (FIS)</h3>
 <p>The Fisheries Information System program is a state-regional-federal partnership supporting sound, science-based fisheries management.</p>
 </section>
-<section id="fisheries-data-governance-committee-fdgc" class="level3">
+<section id="fisheries-data-governance-committee-fdgc" class="level3 person">
 <h3 class="anchored" data-anchor-id="fisheries-data-governance-committee-fdgc">Fisheries Data Governance Committee (FDGC)</h3>
 <p>The purpose of the FDGC is to enable NOAA Fisheries to maximize the value of its data assets through sound and coordinated data governance and management practices.</p>
 </section>
@@ -1539,19 +1375,6 @@ body { padding-left: 52px !important; }
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1958,7 +1781,7 @@ body { padding-left: 52px !important; }
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-ost/EDM-Program/edit/main/team.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-ost/EDM-Program/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-ost/EDM-Program/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org">Quarto</a> · <a href="https://www.usa.gov">USA.gov</a></p>
 </div>
