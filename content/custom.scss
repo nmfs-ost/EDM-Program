@@ -7,97 +7,64 @@ $navbar-fg:             #ffffff;
 $sidebar-bg:            #f5f7fa;
 $sidebar-fg:            #1a1a2e;
 $sidebar-border-color:  #dde3ea;
-$body-bg:               #ffffff;
+$body-bg:               #f0f4f8;
 $body-color:            #1a1a2e;
 $font-family-sans-serif: 'Source Sans 3', 'Segoe UI', sans-serif;
 $headings-font-family:  'Source Sans 3', 'Segoe UI', sans-serif;
 $headings-font-weight:  600;
 $headings-color:        #003087;
-$font-size-base:        1rem;
 
 /*-- scss:rules --*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
 
-/* ── Base Typography & Spacing ── */
-body, p, li {
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important;
-}
-
+/* ── Typography & Base Layout ── */
 body {
-  background-color: $body-bg !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 hr {
-  margin: 1.5rem 0 !important;
-  opacity: 0.15;
+  border: 0;
+  border-top: 1px solid $sidebar-border-color;
+  margin: 1.5rem 0;
+  opacity: 1;
 }
 
 /* ── Headings ── */
 h1, h2, h3, h4,
-#toc-title,
-.person-name,
-.pkg-name,
-.resource h4,
-.stat-n {
-  color: $primary !important;
+#toc-title {
+  color: $primary;
 }
 
 h1.title {
-  font-size: 2rem !important;
-  margin-bottom: 1rem !important;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 h2 {
-  font-size: 1.4rem !important;
-  margin-top: 2.5rem !important;
-  margin-bottom: 1.5rem !important;
-  padding-bottom: 0.5rem !important;
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid $sidebar-border-color;
 }
 
 h3 {
-  font-size: 1.15rem !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.5rem !important;
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
-/* ── Content Layout Panel & Padding ── */
-#quarto-document-content,
-main#quarto-document-content,
-main.content#quarto-document-content,
-#quarto-content > main {
-  background-color: #f0f4f8 !important;
-  border: 1px solid $sidebar-border-color;
-  border-radius: 8px;
-  padding: 2.5rem 3rem 5rem calc(52px + 3rem) !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 3rem !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-}
-
-@media (max-width: 768px) {
-  #quarto-document-content,
-  main#quarto-document-content,
-  main.content#quarto-document-content,
-  #quarto-content > main {
-    padding: 1.5rem 1.25rem 3rem calc(52px + 1rem) !important;
-  }
-}
-
-/* ── Universal Section Card Containers ── */
+/* ── Section Cards (Used across Index, Team, Policies, etc.) ── */
 .team-section,
 .policy-section,
 .section-card {
   background: #ffffff;
   border: 1px solid $sidebar-border-color;
   border-radius: 8px;
-  padding: 1.75rem 2rem 2.25rem;
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 1.5rem;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 
   h2 {
     margin-top: 0 !important;
@@ -106,14 +73,14 @@ main.content#quarto-document-content,
   }
 }
 
-/* ── Person Entries & Dividers ── */
+/* ── Team Member Entries ── */
 .person {
   display: block;
   padding: 1.25rem 0;
   border-bottom: 1px solid #e2e8f0;
 
   &:first-of-type {
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
   }
 
   &:last-child {
@@ -132,7 +99,6 @@ main.content#quarto-document-content,
     margin-bottom: 0.5rem !important;
   }
 
-  /* Style mailto links cleanly */
   a {
     color: $secondary !important;
     font-weight: 600;
@@ -144,67 +110,27 @@ main.content#quarto-document-content,
   }
 }
 
-.person-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: $primary;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  flex-shrink: 0;
-}
-
-.person-role { font-size: 0.78rem; color: $secondary; margin-bottom: 0.2rem; }
-.person-bio  { font-size: 0.85rem; color: #4b5563; margin: 0; line-height: 1.6; }
-
 /* ── Navigation (Navbar & Sidebar) ── */
 .navbar {
-  padding: 0.6rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-bottom: 3px solid $secondary;
 }
 
 .navbar-brand {
   font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: 0.01em;
   color: #ffffff !important;
-
-  img, .navbar-logo {
-    max-height: 65px !important;
-    height: auto !important;
-  }
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.88) !important;
-  font-size: 0.9rem;
-
-  &:hover {
-    color: #ffffff !important;
-  }
 }
 
 .sidebar {
-  border-right: 1px solid $sidebar-border-color !important;
-  font-size: 0.88rem;
+  border-right: 1px solid $sidebar-border-color;
 }
 
 .sidebar-title {
   font-weight: 700;
   color: $primary !important;
-  font-size: 0.95rem;
-  padding-bottom: 0.5rem;
   border-bottom: 2px solid $secondary;
+  padding-bottom: 0.5rem;
   margin-bottom: 0.75rem;
-}
-
-.sidebar-item .sidebar-item-text {
-  color: #374151;
 }
 
 .sidebar-item-container .active > .sidebar-item-text,
@@ -213,239 +139,43 @@ main.content#quarto-document-content,
   font-weight: 600;
 }
 
-.sidebar-section .sidebar-section-item {
-  font-weight: 600;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: $primary !important;
-  margin-top: 1.1rem;
-}
-
-/* ── Right Navigation (Table of Contents) ── */
-#toc-title {
-  font-weight: 700;
-}
-
-nav[role="doc-toc"] ul li {
-  a {
-    color: #595f6b !important;
-    transition: color 0.15s ease-in-out;
-
-    &:hover,
-    &.active {
-      color: $secondary !important;
-    }
-
-    &.active {
-      border-left-color: $secondary !important;
-      font-weight: 600;
-    }
-  }
-}
-
-.quarto-title-meta-heading, 
-.toc-actions a {
-  color: #595f6b !important;
-
-  &:hover {
-    color: $secondary !important;
-  }
-}
-
-.sidebar-navigation.margin-sidebar {
-  background: #f8fafc;
-  padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid $sidebar-border-color;
-}
-
-/* ── Custom UI Components ── */
-.lab-intro {
-  background: linear-gradient(135deg, $primary 0%, #005baa 100%);
-  color: #fff;
-  border-radius: 6px;
-  padding: 2rem 2.25rem;
-  margin-bottom: 2rem;
-
-  h2 {
-    color: #fff !important;
-    border: none;
-    font-size: 1.5rem;
-    margin-top: 0;
-    padding: 0;
-  }
-
-  p {
-    color: rgba(255, 255, 255, 0.88);
-    margin: 0.5rem 0 0;
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-}
-
+/* ── Callouts & Tables ── */
 .callout {
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-.callout-note { border-left-color: $secondary; }
-.callout-tip  { border-left-color: #2a9d8f; }
-
-.stats-row {
-  display: flex;
-  gap: 0;
-  border: 1px solid $sidebar-border-color;
   border-radius: 6px;
-  overflow: hidden;
   margin: 1.5rem 0;
 }
 
-.stat-cell {
-  flex: 1;
-  padding: 1.25rem 1rem;
-  text-align: center;
-  border-right: 1px solid $sidebar-border-color;
-
-  &:last-child {
-    border-right: none;
-  }
-}
-
-.stat-n {
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.stat-l {
-  font-size: 0.75rem;
-  color: #595f6b;
-  margin-top: 0.2rem;
-}
-
-.pkg {
-  padding: 1rem 0;
-  border-bottom: 1px solid #f3f4f6;
-
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-.pkg-header { display: flex; justify-content: space-between; align-items: baseline; }
-.pkg-ver    { font-size: 0.72rem; color: #595f6b; }
-.pkg-desc   { font-size: 0.875rem; color: #374151; margin: 0.3rem 0 0.5rem; line-height: 1.65; }
-.pkg-links a {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: $secondary;
-  text-decoration: none;
-  margin-right: 1rem;
-
-  &:hover { text-decoration: underline; }
-}
-
-.news-row {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 1rem;
-  padding: 0.9rem 0;
-  border-bottom: 1px solid #f3f4f6;
-  font-size: 0.875rem;
-  align-items: baseline;
-
-  &:first-child { border-top: 1px solid #f3f4f6; }
-}
-
-.news-date { color: #595f6b; font-size: 0.75rem; font-weight: 600; }
-.news-text { color: #374151; line-height: 1.6; strong { color: $primary; } }
-
-.resource {
-  padding: 0 0 1.5rem 1.25rem;
-  margin-bottom: 1.5rem;
-  border-left: 3px solid $sidebar-border-color;
-  transition: border-color 0.2s;
-
-  &:hover {
-    border-left-color: $secondary;
-  }
-
-  p { font-size: 0.9rem; color: #374151; margin: 0 0 0.6rem; line-height: 1.6; }
-  a {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: $secondary;
-    text-decoration: none;
-
-    &:hover { text-decoration: underline; }
-  }
-}
-
-.badge-noaa {
-  display: inline-block;
-  background: #eff6ff;
-  color: $primary;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.18rem 0.5rem;
-  border-radius: 3px;
-  margin: 0.15rem 0.1rem;
-  border: 1px solid #bfdbfe;
-}
-
-/* ── Tables & Utilities ── */
 table {
-  max-width: 900px;
-}
-
-.info-table {
   width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
   margin: 1rem 0;
+  border-collapse: collapse;
 
-  td, th {
+  th, td {
     padding: 0.6rem 0.75rem;
     border-bottom: 1px solid #e5e7eb;
-    vertical-align: top;
   }
 
   th {
     background: $sidebar-bg;
-    font-weight: 600;
     color: $primary;
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+  }
+}
+
+/* ── Mobile Layout Fixes ── */
+@media (max-width: 768px) {
+  .team-section,
+  .policy-section,
+  .section-card {
+    padding: 1rem !important;
+    margin-bottom: 1.25rem !important;
   }
 
-  tr:last-child td { border-bottom: none; }
-  td:first-child   { font-weight: 600; color: #1a1a2e; white-space: nowrap; }
-}
-
-.nav-footer {
-  border-top: 1px solid $sidebar-border-color;
-  font-size: 0.8rem;
-  color: #595f6b;
-}
-
-.dg-sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-  list-style: none;
-}
-
-.dg-search-result.dg-result-active {
-  background: rgba(0, 133, 202, 0.10);
-  color: $primary;
-  outline: 2px solid $secondary;
-  outline-offset: -2px;
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
